@@ -2,19 +2,19 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
 ---
 
 
 <MainLayout title="Titel">
 
-
-
 	<!-- Hero section -->
 
 <section class="">
-	<img src="" alt="">
-	<h1>text</h1>
+
+<div>
+</div>
+
+	<h1></h1>
 	<p></p>
 	<button></button>
 	<button></button>
@@ -114,6 +114,75 @@ import { Image } from 'astro:assets';
 		</section>
 </section> -->
 
+<!-- forfatteren section -->
+
+	<section id="forfatter" class="grid lg:grid-cols-2 mt-32 max-w-3xl mx-auto gap-6"> 
+			<div>
+				<!-- <Image src={} alt="København" class="" /> -->
+			</div>
+			<article class="prose">
+				<h2 class="text-4xl">Forfatteren</h2>
+				<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
+Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
+			</article>
+		</section>
+
+<!-- formular section -->
+
+<section  id="tilmelding" class="max-w-lg mx-auto mt-32 p-4">
+			<h2 class="text-4xl font-bold pb-4">Tilmeld dig</h2>
+			<form class="space-y-4 grid grid-cols-1 gap-6">
+	
+				<div class="">
+					<label for="kursusgang">Kursusgang:</label>					
+					<select name="kursusgang" id="kursusgang">
+						<option value="oktober">Oktober 2024</option>
+						<option value="december">December 2024</option>
+						<option value="februar">Februar 2025</option>
+					</select>
+				</div>
+	
+				<div class="">
+					<span>Betaling:</span>
+					<input type="radio" id="forud" name="levering" checked="checked">
+					<label for="forud">Forudbetaling</label>
+					<input type="radio" id="kredit" name="levering">
+					<label for="kredit">Kredit</label>
+					<input type="radio" id="kontant" name="levering">
+					<label for="kontant">Kontant</label>
+					
+				</div>
+			
+				<div class="grid gap-3">
+					<label for="navn">Navn:</label>
+					<input type="text" id="navn" name="navn" placeholder="Anders And">
+				</div>
+	
+				<div class="grid gap-3">
+					<label for="adresse">Adresse:</label>
+					<input type="text" id="adresse" name="adresse" placeholder="Paradisæblevej 8">
+				</div>
+	
+				<div class="grid gap-3 grid-cols-6">
+					<label for="postnummer" class="col-span-6">Postnummer & by:</label>
+					<input type="text" id="postnummer" name="postnummer" class="col-span-2" placeholder="0900">
+					<input type="text" id="bynavn" name="bynavn" disabled class="col-span-4" placeholder="Andeby C">
+				</div>
+	
+				<div class="grid gap-3">
+					<label for="telefon">Telefon:</label>
+					<input type="tel" id="telefon" name="telefon" placeholder="555-555">
+				</div>
+	
+				<div class="">
+					<input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+					<label for="nyhedsbrev">Ja tak til nyhedsbreve og tilbud</label>
+				</div>
+	
+				<div class="flex justify-end">
+					<Button variant="primary" size="medium">Til betaling</Button>
+				</div>
+			</form>
+		</section>
+
 </MainLayout>
-
-

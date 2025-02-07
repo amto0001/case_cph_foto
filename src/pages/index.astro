@@ -12,35 +12,39 @@ const images = Object.values(
 
 	<!-- Hero section -->
 <section class="grid md:grid-cols-2 lg:mt-20 gap-10">
-<div>
-	<img src="/src/assets/images/hero1.webp" alt="hero">
-</div>
-<div class="content-center" >
-		<h1 class="text-4xl font-bold" >Københavnerbilleder - en guide til hipster foto</h1>
-		<h2 class="text-1xl font-light" >af Sten Simons</h2>
-<div class="grid grid-cols-2" >
-		<div class="p-4 ">
-		<label for="email">E-mail:</label>
-		<input type="email" id="e-mail" name="email" placeholder="Lars@larsen.com">
-		<p class="font-light text-xs" >*Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om bogen ved at downloade prøvekapitlet.</p>
-</div>
-	<div class="flex justify-end">
-		<Button variant="primary" size="medium">Hent prøvekapitel</Button>
+	<div>
+		<img src="/src/assets/images/hero1.webp" alt="hero">
 	</div>
-</div>	
+
+<!-- her kommer overskift -->
+	<div class="content-center " >
+		<h1 class="text-5xl font-bold text-red-700" >Københavnerbilleder - en guide til hipster foto</h1>
+		<h2 class="text-1xl font-light mt-3 text-red-950 " >af Sten Simons</h2>
+	<div>
+
+<!-- her kommer CTA -->
+	<div class="grid grid-cols-2 mt-10" >
+		<div >
+			<label for="email">E-mail:</label>
+			<input class="pr-50 " type="email" id="e-mail" name="email" placeholder="Lars@larsen.com">
+			<p class="font-light text-xs w-100 mt-2 text-red-950" >*Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om bogen ved at downloade prøvekapitlet.</p>
+			<div class="mt-8" ><Button variant="primary" size="medium">Hent prøvekapitel</Button></div>
+			
+		</div>
+	</div>
 </section>
 
 <!-- stamdata + facts section-->
 
-<section id="kurset" class="mt-20 grid lg:grid-cols-2 prose gap-15">
-			<article  >
-				<h2 class="animate__animated animate__bounceInLeft text-4xl">Kort om bogen</h2>
-				<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
+<section id="kurset" class="mt-20 grid lg:grid-cols-2 prose gap-15 mx-auto ">
+			<article >
+				<h2 class=" text-red-700 animate__animated animate__bounceInLeft text-4xl">Kort om bogen</h2>
+				<p class="text-red-950" >Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
 
 			</article>
-			<article >
-				<h2 class="animate__animated animate__bounceInRight text-4xl">Fakta</h2>
-				<ul>
+			<article>
+				<h2 class="animate__animated animate__bounceInRight text-4xl text-red-700 ">Fakta</h2>
+				<ul class="text-red-950" >
 					<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
 					<li>Forfatter: Sten Simons</li>
 					<li>Antal sider: 344</li>
@@ -63,75 +67,75 @@ const images = Object.values(
 
 <div class="uddrag">
 		<section class="mt-32" id="uddrag">
-			<h2 class="text-4xl font-bold">Uddrag fra bogen</h2>
-			<div class="grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 gap-15 pt-10">
+			<h2 class="text-4xl font-bold text-red-700">Uddrag fra bogen</h2>
+			<div class="grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 gap-15 pt-10  ">
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 1 - Intro til street foto</h3>
-					<p>Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.</p>
+					<h3 class="text-xl text-red-950">Kapitel 1 - Intro til street foto</h3>
+					<p class="text-red-950" >Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.</p>
 				</article>
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 2 - Om at skyde street</h3>
-					<p>Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
+					<h3 class="text-xl text-red-950">Kapitel 2 - Om at skyde street</h3>
+					<p class="text-red-950" >Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
 				</article>
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 3 - Om at finde det rette motiv</h3>
-					<p>Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</p>
+					<h3 class="text-xl text-red-950">Kapitel 3 - Om at finde det rette motiv</h3>
+					<p class="text-red-950" >Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</p>
 				</article>
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 4 - Digital street foto</h3>
-					<p>De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </p>
+					<h3 class="text-xl text-red-950">Kapitel 4 - Digital street foto</h3>
+					<p class="text-red-950" >De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </p>
 				</article>		
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 5 - Analog street foto</h3>
-					<p>Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. </p>
+					<h3 class="text-xl text-red-950">Kapitel 5 - Analog street foto</h3>
+					<p class="text-red-950" >Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. </p>
 				</article>	
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 6 - Om at skyde sort/hvid</h3>
-					<p>Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. </p>
+					<h3 class="text-xl text-red-950">Kapitel 6 - Om at skyde sort/hvid</h3>
+					<p class="text-red-950" >Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. </p>
 				</article>	
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 7 - Kreative teknikker</h3>
-					<p>Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</p>
+					<h3 class="text-xl text-red-950">Kapitel 7 - Kreative teknikker</h3>
+					<p class="text-red-950" >Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</p>
 				</article>	
 				<article class="prose">
-					<h3 class="text-xl">Kapitel 8 - Kom helt tæt på!</h3>
-					<p>Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf</p>				</article>	
+					<h3 class="text-xl text-red-950">Kapitel 8 - Kom helt tæt på!</h3>
+					<p class="text-red-950" >Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf</p>				</article>	
 			</div>
 		</section>
 </div>
 
 <!-- anmeldelser section -->
 	<section class="mt-32">
-			<h2 class="text-4xl font-bold">Anmeldelser</h2>
+			<h2 class="text-4xl font-bold text-red-700 ">Anmeldelser</h2>
 			<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-15 pt-10">
 				<article class="prose mb-6">
-					<span class="font-bold">5 af 6 stjerner</span>
-					<p>Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.</p>
-					<p class="italic">Hanne Hovgaard, Berlingeren</p>
+					<span class="font-bold text-red-950 ">5 af 6 stjerner</span>
+					<p class="text-red-950" >Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.</p>
+					<p class="italic text-red-950">Hanne Hovgaard, Berlingeren</p>
 				</article>
 				<article class="prose mb-6">
-					<span class="font-bold">4 af 6 stjerner</span>
-					<p>Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog?</p>
-					<p class="italic">Kim Kloggaard, Fotojournalen.dk</p>
+					<span class="font-bold text-red-950">4 af 6 stjerner</span>
+					<p class="text-red-950">Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog?</p>
+					<p class="italic text-red-950">Kim Kloggaard, Fotojournalen.dk</p>
 				</article>
 				<article  class="prose mb-6">
-					<span class="font-bold">6 af 6 stjerner</span>
-					<p>Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde.</p>
-					<p class="italic">Volmer Hansen, Lukkertiden.dk</p>
+					<span class="font-bold text-red-950">6 af 6 stjerner</span>
+					<p class="text-red-950">Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde.</p>
+					<p class="italic text-red-950">Volmer Hansen, Lukkertiden.dk</p>
 				</article>
 			</div>
 		</section>
 
 <!-- galleri secion -->
 	<section id="inspiration" class="my-32">
-			<h2 class="text-4xl font-bold">Inspiration fra tidligere kurser</h2>
+			<h2 class="text-4xl font-bold text-red-700 mb-8 ">Galleri</h2>
 			<div class="columns-2 lg:columns-4">
 			{
 				images.map(({ src }) => (
 				<div class="galleri">
 					<img
 						src={src}
-						class="mb-4"
+						class="mb-4 h-100 w-100 "
 						alt=""
 						loading="lazy"
 					/>
@@ -144,8 +148,8 @@ const images = Object.values(
 <!-- forfatteren section -->
 	<section id="forfatter" class="grid lg:grid-cols-2 mt-32 max-w-3xl mx-auto gap-20"> 
 			<article class="prose">
-				<h2 class="text-4xl">Sten Simons</h2>
-				<p class="tracking-normal" >Sten Simons har en lang foto-karriere bag sig. <br>
+				<h2 class="text-4xl text-red-700">Sten Simons</h2>
+				<p class="tracking-normal text-red-950" >Sten Simons har en lang foto-karriere bag sig. <br>
 				Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet. ”Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse og lærebogen Fotografering for evnesvage.</p>
 			</article>
 
@@ -157,7 +161,7 @@ const images = Object.values(
 <!-- formular section -->
 
 <section  id="tilmelding" class="max-w-lg mx-auto mt-32 p-4">
-	<h2 class="text-2xl font-bold pb-4">Køb bogen</h2>
+	<h2 class="text-2xl font-bold pb-4 text-red-700">Køb bogen</h2>
 	<form class="space-y-2 grid grid-cols-1 gap-1">
 	
 		<div class="">

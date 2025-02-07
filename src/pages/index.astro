@@ -10,26 +10,28 @@ import bog3 from "../assets/images/bog3.webp";
 <MainLayout title="Titel">
 
 	<!-- Hero section -->
-<section class=" grid grid-cols-2">
-	<div>
-		<img src="/src/assets/images/hero1.webp" alt="hero">
-	</div>
-	<div>
+<section class="grid md:grid-cols-2 lg:mt-20 gap-10">
+<div>
+	<img src="/src/assets/images/hero1.webp" alt="hero">
+</div>
+<div class="content-center" >
 		<h1 class="text-4xl font-bold" >Københavnerbilleder - en guide til hipster foto</h1>
 		<h2 class="text-1xl font-light" >af Sten Simons</h2>
-	<div class="p-4">
+<div class="grid grid-cols-2" >
+		<div class="p-4 ">
 		<label for="email">E-mail:</label>
 		<input type="email" id="e-mail" name="email" placeholder="Lars@larsen.com">
-			<p>*Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om bogen ved at downloade prøvekapitlet. [skrives med småt]</p>
-	</div>
+		<p class="font-light text-xs" >*Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om bogen ved at downloade prøvekapitlet.</p>
+</div>
 	<div class="flex justify-end">
 		<Button variant="primary" size="medium">Hent prøvekapitel</Button>
 	</div>
+</div>	
 </section>
 
 <!-- stamdata + facts section-->
 
-<section id="kurset" class="mt-32 grid lg:grid-cols-2 prose mx-auto gap-4">
+<section id="kurset" class="mt-20 grid lg:grid-cols-2 prose gap-15">
 			<article  >
 				<h2 class="animate__animated animate__bounceInLeft text-4xl">Kort om bogen</h2>
 				<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
@@ -61,7 +63,7 @@ import bog3 from "../assets/images/bog3.webp";
 <div class="uddrag">
 		<section class="mt-32" id="uddrag">
 			<h2 class="text-4xl font-bold">Uddrag fra bogen</h2>
-			<div class="grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 gap-8">
+			<div class="grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 gap-15 pt-10">
 				<article class="prose">
 					<h3 class="text-xl">Kapitel 1 - Intro til street foto</h3>
 					<p>Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.</p>
@@ -100,7 +102,7 @@ import bog3 from "../assets/images/bog3.webp";
 <!-- anmeldelser section -->
 	<section class="mt-32">
 			<h2 class="text-4xl font-bold">Anmeldelser</h2>
-			<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
+			<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-15 pt-10">
 				<article class="prose mb-6">
 					<span class="font-bold">5 af 6 stjerner</span>
 					<p>Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.</p>
@@ -142,22 +144,23 @@ import bog3 from "../assets/images/bog3.webp";
 </section> -->
 
 <!-- forfatteren section -->
-	<section id="forfatter" class="grid lg:grid-cols-2 mt-32 max-w-3xl mx-auto gap-6"> 
-			<div>
+	<section id="forfatter" class="grid lg:grid-cols-2 mt-32 max-w-3xl mx-auto gap-20"> 
+			<article class="prose">
+				<h2 class="text-4xl">Sten Simons</h2>
+				<p class="tracking-normal" >Sten Simons har en lang foto-karriere bag sig. <br>
+				Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet. ”Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse og lærebogen Fotografering for evnesvage.</p>
+			</article>
+
+				<div>
 				<img src="/src/assets/images/forfatter.webp" alt="forfatter">
 			</div>
-			<article class="prose">
-				<h2 class="text-4xl">Forfatteren</h2>
-				<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
-Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
-			</article>
 		</section>
 
 <!-- formular section -->
 
 <section  id="tilmelding" class="max-w-lg mx-auto mt-32 p-4">
-	<h2 class="text-4xl font-bold pb-4">Køb bogen</h2>
-	<form class="space-y-4 grid grid-cols-1 gap-6">
+	<h2 class="text-2xl font-bold pb-4">Køb bogen</h2>
+	<form class="space-y-2 grid grid-cols-1 gap-1">
 	
 		<div class="">
 			<label for="Antal">Antal:</label>					
@@ -174,27 +177,27 @@ Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse d
 			<label for="levering">Levering</label>
 		</div>
 			
-		<div class="grid gap-3">
+		<div class="grid gap-1">
 			<label for="navn">Navn:</label>
 			<input type="text" id="navn" name="navn" placeholder="Anders And">
 		</div>
 	
-		<div class="grid gap-3">
+		<div class="grid gap-1">
 			<label for="adresse">Adresse:</label>
 			<input type="text" id="adresse" name="adresse" placeholder="Paradisæblevej 8">
 		</div>
-		<div class="grid gap-3 grid-cols-6">
+		<div class="grid gap-1 grid-cols-6">
 			<label for="postnummer" class="col-span-6">Postnummer & by:</label>
 			<input type="text" id="postnummer" name="postnummer" class="col-span-2" placeholder="0900">
 			<input type="text" id="bynavn" name="bynavn" disabled class="col-span-4" placeholder="Andeby C">
 		</div>
-		<div class="grid gap-3">
+		<div class="grid gap-1">
 			<label for="email">E-mail:</label>
 			<input type="text" id="email" name="email" placeholder="Lars@Larsen.dk">
 		</div>
-		<div class="grid gap-3">
+		<div class="grid gap-1">
 			<label for="telefon">Telefon:</label>
-			<input type="tel" id="telefon" name="telefon" placeholder="555-555">
+			<input type="tel" id="telefon" name="telefon" placeholder="+45 20 30 40 50">
 		</div>
 		<div class="">
 			<input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">

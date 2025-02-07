@@ -2,9 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
-import bog1 from "../assets/images/bog1.webp";
-import bog2 from "../assets/images/bog2.webp";
-import bog3 from "../assets/images/bog3.webp";
+import { Image } from 'astro:assets';
+const images = Object.values(
+  import.meta.glob("/src/assets/images/galleri/*", { eager: true })
+).map(file => file.default);
 ---
 
 <MainLayout title="Titel">
@@ -122,8 +123,6 @@ import bog3 from "../assets/images/bog3.webp";
 		</section>
 
 <!-- galleri secion -->
-<!-- <section class="" >
-	<h2></h2>
 	<section id="inspiration" class="my-32">
 			<h2 class="text-4xl font-bold">Inspiration fra tidligere kurser</h2>
 			<div class="columns-2 lg:columns-4">
@@ -141,7 +140,6 @@ import bog3 from "../assets/images/bog3.webp";
 			}
 			</div>
 		</section>
-</section> -->
 
 <!-- forfatteren section -->
 	<section id="forfatter" class="grid lg:grid-cols-2 mt-32 max-w-3xl mx-auto gap-20"> 

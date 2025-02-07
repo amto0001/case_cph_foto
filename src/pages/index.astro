@@ -7,35 +7,42 @@ import Link from '../components/Link.astro';
 <MainLayout title="Titel">
 
 	<!-- Hero section -->
-<section class="">
-	<img src="/src/assets/images/" alt="">
-	<h1 class="text-4xl font-bold" >Københavnerbilleder - en guide til hipster foto</h1>
-	<h2 class="text-1xl font-light" >af Sten Simons</h2>
-	<div class="p-4">
-			<label for="email">E-mail:</label>
-			<input type="email" id="e-mail" name="email" placeholder="Lars@larsen.com">
+<section class=" grid grid-cols-2">
+	<div>
+		<img src="/src/assets/images/hero1.webp" alt="hero">
 	</div>
-	
-				<div class="flex justify-end">
-					<Button variant="primary" size="medium">Hent prøvekapitel</Button>
-			</div>
-
-	<p>*Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om bogen ved at downloade prøvekapitlet. [skrives med småt]
-</p>
+	<div>
+		<h1 class="text-4xl font-bold" >Københavnerbilleder - en guide til hipster foto</h1>
+		<h2 class="text-1xl font-light" >af Sten Simons</h2>
+	<div class="p-4">
+		<label for="email">E-mail:</label>
+		<input type="email" id="e-mail" name="email" placeholder="Lars@larsen.com">
+			<p>*Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om bogen ved at downloade prøvekapitlet. [skrives med småt]</p>
+	</div>
+	<div class="flex justify-end">
+		<Button variant="primary" size="medium">Hent prøvekapitel</Button>
+	</div>
 </section>
 
 <!-- stamdata + facts section-->
-<section class="" >
-	<h2>Kort om bogen</h2>
-	<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
-	<div>
-		<ul>Titel: Københavnerbilleder - en guide til hipster foto</ul>
-		<ul>Forfatter: Sten Simons</ul>
-		<ul>Antal sider: 344</ul>
-		<ul>Forlag: Mellem Linjerne</ul>
-		<ul>ISBN: 987-6-987654-32-1</ul>
-		<ul>Pris: 399.-</ul>
-	</div>
+
+<section id="kurset" class="mt-32 grid lg:grid-cols-2 prose mx-auto gap-4">
+			<article  >
+				<h2 class="animate__animated animate__bounceInLeft text-4xl">Kort om bogen</h2>
+				<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
+
+			</article>
+			<article >
+				<h2 class="animate__animated animate__bounceInRight text-4xl">Fakta</h2>
+				<ul>
+					<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
+					<li>Forfatter: Sten Simons</li>
+					<li>Antal sider: 344</li>
+					<li>Forlag: Mellem Linjerne</li>
+					<li>ISBN: 987-6-987654-32-1-</li>
+					<li>Pris: 399,-</li>
+				</ul>
+			</article>
 </section>
 
 <!-- fotos af bogen section  -->
